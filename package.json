@@ -1,6 +1,6 @@
 {
   "name": "bezier-animator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple bezier curve callback animator",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
