@@ -62,7 +62,6 @@ export class BezierAnimator {
 		} else {
 			//the animation is over, because elapsed >= duration
 			//reset the animator
-			this.duration = 0;
 			this.elapsed = 0;
 			this.t = 0;
 			this.startTime = undefined;
