@@ -2,9 +2,13 @@
   "name": "bezier-animator",
   "version": "1.0.0",
   "description": "A simple bezier curve callback animator",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "index": "ts-node -r tsconfig-paths/register index.ts",
+	"crappytest": "ts-node -r tsconfig-paths/register crappytest.ts"
   },
   "keywords": [
     "bezier",
@@ -15,9 +19,19 @@
     "type": "git",
     "url": "https://github.com/parkernilson/bezier-animator.git"
   },
-  "author": "parkernilson",
+  "author": "Parker Nilson",
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/raf": "^3.4.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "tsconfig-paths": "^3.8.0",
     "typescript": "^3.4.4"
+  },
+  "dependencies": {
+    "performance-now": "^2.1.0",
+    "raf": "^3.4.1"
   }
 }
