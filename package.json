@@ -11,6 +11,13 @@
     "curve",
     "animator"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parkernilson/bezier-animator.git"
+  },
   "author": "parkernilson",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.4.4"
+  }
 }
