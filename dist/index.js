@@ -8,3 +8,4 @@ var animator_1 = require("./lib/animator/animator");
 exports.BezierAnimator = animator_1.BezierAnimator;
 var util_1 = require("./lib/util/util");
 exports.map = util_1.map;
+//# sourceMappingURL=index.js.map

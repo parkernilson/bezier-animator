@@ -24,3 +24,4 @@ var CubicBezier = /** @class */ (function () {
     return CubicBezier;
 }());
 exports.CubicBezier = CubicBezier;
+//# sourceMappingURL=cubic-bezier.js.map

@@ -48,12 +48,12 @@ var BezierAnimator = /** @class */ (function () {
         else {
             //the animation is over, because elapsed >= duration
             //reset the animator
-            this.duration = 0;
             this.elapsed = 0;
             this.t = 0;
             this.startTime = undefined;
             //the last value will always be 1
             this.emit(1);
+            console.log(this);
         }
     };
     /**
@@ -67,3 +67,4 @@ var BezierAnimator = /** @class */ (function () {
     return BezierAnimator;
 }());
 exports.BezierAnimator = BezierAnimator;
+//# sourceMappingURL=animator.js.map
