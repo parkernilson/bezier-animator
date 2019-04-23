@@ -6,7 +6,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "build:watch": "tsc --watch"
+    "build:watch": "tsc --watch",
+    "start:debug": "node --inspect --require ts-node/register crappytest.ts",
+    "start:debug:brk": "node --inspect-brk --require ts-node/register crappytest.ts"
   },
   "keywords": [
     "bezier",
@@ -20,7 +22,8 @@
   "author": "Parker Nilson",
   "license": "ISC",
   "devDependencies": {
-    "@types/raf": "^3.4.0"
+    "@types/raf": "^3.4.0",
+    "ts-node": "^8.1.0"
   },
   "dependencies": {
     "performance-now": "^2.1.0",

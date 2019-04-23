@@ -67,6 +67,7 @@ export class BezierAnimator {
 			this.startTime = undefined;
 			//the last value will always be 1
 			this.emit(1);
+			console.log(this);
 		}
 
 	}
