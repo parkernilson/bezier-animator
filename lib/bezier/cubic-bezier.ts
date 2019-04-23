@@ -1,4 +1,4 @@
-import { Point } from '@point/point';
+import { Point } from '../point/point';
 
 /**
  * Represents a cubic bezier curve.

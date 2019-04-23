@@ -3,8 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var cubic_bezier_1 = require("@bezier/cubic-bezier");
-var point_1 = require("@point/point");
+var cubic_bezier_1 = require("../bezier/cubic-bezier");
+var point_1 = require("../point/point");
 var performance_now_1 = __importDefault(require("performance-now"));
 var raf_1 = __importDefault(require("raf"));
 var MILLISECONDS_PER_SECOND = 1000;

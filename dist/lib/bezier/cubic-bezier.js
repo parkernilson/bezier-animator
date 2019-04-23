@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var point_1 = require("@point/point");
+var point_1 = require("../point/point");
 /**
  * Represents a cubic bezier curve.
  */

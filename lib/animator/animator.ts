@@ -1,5 +1,5 @@
-import { CubicBezier } from '@bezier/cubic-bezier';
-import { Point } from '@point/point';
+import { CubicBezier } from '../bezier/cubic-bezier';
+import { Point } from '../point/point';
 import now from 'performance-now';
 import requestAnimationFrame from 'raf';
 

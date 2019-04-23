@@ -1,4 +1,4 @@
-import { CubicBezier } from '@bezier/cubic-bezier';
+import { CubicBezier } from '../bezier/cubic-bezier';
 interface AnimatorOptions {
     curve?: CubicBezier;
     duration?: number;
