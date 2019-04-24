@@ -4,7 +4,7 @@ import { BezierCurve } from './bezier-curve';
 /**
  * Represents a quadratic bezier curve
  */
-export class BezierCurve implements BezierCurve {
+export class QuadraticBezier implements BezierCurve {
 
 	control1: Point;
 	start: Point;

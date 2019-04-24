@@ -7,8 +7,9 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "start:debug": "node --inspect --require ts-node/register crappytest.ts",
-    "start:debug:brk": "node --inspect-brk --require ts-node/register crappytest.ts"
+    "start:debug": "node --inspect --require ts-node/register index.ts",
+    "start:debug:brk": "node --inspect-brk --require ts-node/register index.ts",
+	"test": "mocha --colors -r ts-node/register lib/**/*.spec.ts"
   },
   "keywords": [
     "bezier",
@@ -22,7 +23,11 @@
   "author": "Parker Nilson",
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
     "@types/raf": "^3.4.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
     "ts-node": "^8.1.0"
   },
   "dependencies": {

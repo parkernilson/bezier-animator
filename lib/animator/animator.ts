@@ -1,4 +1,4 @@
-import { BezierCurve } from '../bezier/bezier';
+import { BezierCurve, CubicBezier } from '../bezier/bezier';
 import { Point } from '../point/point';
 import now from 'performance-now';
 import requestAnimationFrame from 'raf';

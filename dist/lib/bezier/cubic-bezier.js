@@ -11,15 +11,18 @@ var CubicBezier = /** @class */ (function () {
         this.control1 = control1;
         this.control2 = control2;
     }
+    /**
+     * get a value from the bezier curve where 0 <= t <= 1
+     */
     CubicBezier.prototype.getValue = function (t) {
         if (t < 0)
             t = 0;
         else if (t > 1)
             t = 1;
-        return (Math.pow((1 - t), 3)) * this.start.y +
-            3 * Math.pow((1 - t), 2) * t * this.control1.y +
-            3 * (1 - t) * Math.pow(t, 2) * this.control2.y +
-            Math.pow(t, 3) * this.end.x;
+        return Math.pow((1 - t), 3) * this.start.y
+            + 3 * Math.pow((1 - t), 2) * t * this.control1.y
+            + 3 * (1 - t) * Math.pow(t, 2) * this.control2.y
+            + Math.pow(t, 3) * this.end.y;
     };
     return CubicBezier;
 }());
