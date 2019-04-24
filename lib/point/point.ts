@@ -1,3 +1,6 @@
+/**
+ * a point in 2-D Space
+ */
 export class Point {
 	x: number;
 	y: number;
